@@ -1,3 +1,13 @@
+# 2025.0 : Rmarkdown and Shiny Templates For Scientific Reporting
+
+ - Clean up the scripts
+ - Two distinct Rmarkdown templates: template1 and template2
+
+# 2024.2 : Rmarkdown and Shiny Templates For Scientific Reporting
+
+ - Fixed TOC
+
+ 
 # 2024.1 : Rmarkdown and Shiny Templates For Scientific Reporting
 
  - Add javascript scripts and program toc collapsing

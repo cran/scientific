@@ -1,5 +1,4 @@
 .onLoad <- function(lib, pkg) {
-  # this engine will be overridden in html/handout formats
   knitr::knit_engines$set(marginfigure = function(options) {
     ''
   })
