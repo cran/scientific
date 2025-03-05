@@ -2,7 +2,7 @@ Type: Package
 Package: scientific
 Title: Two Highly Customizable 'rmarkdown' Themes for Scientific
         Reports
-Version: 2025.0
+Version: 2025.1
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
@@ -19,7 +19,7 @@ Language: en-US
 LazyData: false
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2025-02-02 08:51:32 UTC; in198
+Packaged: 2025-03-05 04:29:10 UTC; in198
 Author: Obinna Obianom [aut, cre]
 Repository: CRAN
-Date/Publication: 2025-02-02 09:10:02 UTC
+Date/Publication: 2025-03-05 10:50:03 UTC

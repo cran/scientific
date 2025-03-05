@@ -27,17 +27,24 @@
 #' @export
 html <- function(...,template = "template1") {
   margin_references = TRUE
+  tplext = ".tpl"
+  cf. = list(...)$code_folding
+  if(!is.null(cf.)){
+    if(cf. == "hide"){
+      tplext = ".tpl2"
+    }
+  }
   html_document2 <- function(..., extra_dependencies = list()) {
     rmarkdown::html_document(
       ...,
       template = system.file("rmarkdown", "templates", "html",
-                             "layout",paste0(template,".tpl"), package = .packageName),
+                             "layout",paste0(template,tplext), package = .packageName),
       extra_dependencies = c(
         extra_dependencies, fetchHtmlDep()
       )
     )
   }
-  format <- html_document2(theme = NULL, highlight= NULL, ...)
+  format <- html_document2(theme = "default", highlight= NULL, ...)
   pandoc2 <- pandoc2.0()
 
   # add --wrap=preserve to pandoc args for pandoc 2.0:
